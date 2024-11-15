@@ -34,11 +34,11 @@ namespace Assessment_ValeriaPiedrahita.models
         [MaxLength(15)]
         public required string Password {get; set;}
 
-        [Column("dateofbirth")]
+        [Column("date_of_birth")]
         [Required]
         public required DateTime DateOfBirth {get; set;}
 
-        [Column("IdentificationNumber")]
+        [Column("Identification_number")]
         [Required]
         [MaxLength(30)]
         public required string IdentificationNumber {get; set;}
