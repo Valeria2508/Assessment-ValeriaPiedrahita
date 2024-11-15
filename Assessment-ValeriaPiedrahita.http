@@ -1,0 +1,6 @@
+@Assessment_ValeriaPiedrahita_HostAddress = http://localhost:5282
+
+GET {{Assessment_ValeriaPiedrahita_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
