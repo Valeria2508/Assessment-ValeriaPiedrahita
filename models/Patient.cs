@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Assessment_ValeriaPiedrahita.models
 {
@@ -31,7 +32,7 @@ namespace Assessment_ValeriaPiedrahita.models
 
         [Column("password")]
         [Required]
-        [MaxLength(15)]
+        [MaxLength(255)]
         public required string Password {get; set;}
 
         [Column("date_of_birth")]
@@ -42,6 +43,5 @@ namespace Assessment_ValeriaPiedrahita.models
         [Required]
         [MaxLength(30)]
         public required string IdentificationNumber {get; set;}
-
     }
 }

@@ -39,7 +39,7 @@ namespace Assessment_ValeriaPiedrahita.models
         [Required]
         public required string Details {get; set;}
 
-        [ForeignKey("parient_id")]
+        [ForeignKey("PatientId")]
         public Patient Patients {get; set;} //patient is foreign key
     }
 }

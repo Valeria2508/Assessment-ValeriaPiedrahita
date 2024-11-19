@@ -36,13 +36,13 @@ namespace Assessment_ValeriaPiedrahita.models
         [MaxLength(255)]
         public required string Reason {get; set;}
 
-        [ForeignKey("patient_id")]
+        [ForeignKey("PatientId")]
         public virtual Patient Patients { get; set; }
 
-        [ForeignKey("doctor_id")]
+        [ForeignKey("DoctorId")]
         public virtual Doctor Doctors { get; set; }
 
-        [ForeignKey("medical_historial_id")]
+        [ForeignKey("MedicalHistorialId")]
         public virtual MedicalHisorial MedicalHistorials { get; set; }
 
     }

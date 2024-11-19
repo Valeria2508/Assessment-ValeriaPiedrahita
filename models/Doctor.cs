@@ -27,17 +27,13 @@ namespace Assessment_ValeriaPiedrahita.models
         [Required]
         public required string Specialization {get; set;}
 
-        [Column("start_time ")]
+        [Column("start_time")]
         [Required]
         public required TimeOnly StartTime {get; set;}
 
         [Column("end_time")]
         [Required]
         public required TimeOnly EndTime {get; set;}
-
-        [Column("aviable")]
-        [Required]
-        public required bool Available {get; set;}
 
         [Column("email")]
         [Required]
